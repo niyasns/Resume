@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>RESUME GENERATOR</title>
+    <link rel = "stylesheet" href = "resume.css">
+</head>
+<body>
+<h1>Resume Maker </h1>
+<h3>Fill the form and click generate button to generate resume</h3>
+<form name method = "post" action = "report.php">
+    <fieldset>
+        <legend><b><i>Personal Details</i></b></legend>
+        <div class = "tableRow">
+            <p>
+                <label for = "name">Name :</label>
+            </p>
+            <p>
+                <input type = "text"  Name = "name" id = "name" value = "" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "address">Address:</label>
+            </p>
+            <p>
+                <input type = "text" name = "address" id = "address" value = "" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "city">City:</label>
+            </p>
+            <p>
+                <input type = "text" name = "city" id = "city" value = "" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "state">State:</label>
+            </p>
+            <p>
+                <input type = "text" name = "state" id = "state" value = "" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "pin">Pin:</label>
+            </p>
+            <p>
+                <input type = "text" name = "pin" id = "pin" value = "" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "phone">Mobile Number:</label>
+            </p>
+            <p>
+                <input type = "tel" name = "phone" id = "phone" value = "" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "email">Email:</label>
+            </p>
+            <p>
+                <input type = "email" name = "email" id = "email" placeholder = "example@mail.com" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "dob">DOB:</label>
+            </p>
+            <p>
+                <input type = "date" name = "dob" id = "dob" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                Gender:
+            </p>
+            <p>
+                <input type="radio" name="gender" value="Male" id="male" >
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Female" id="female" >
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="Trans" id="trans" >
+                <label for="trans">Trans</label>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "father">Father:</label>
+            </p>
+            <p>
+                <input type = "text" name = "father" id = "father" required>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for="mother">Mother:</label>
+            </p>
+            <p>
+                <input type = "text" name = "mother" id = "mother" required>
+            </p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend><b><i>Educational Details</i></b></legend>
+        <div class = "tableRow">
+            <p>
+                Choose your Degree:
+            </p>
+            <p>
+                <label for = "education">
+                    <select name = "education" id = "education" >
+                        <option value = "BCA">BCA</option>
+                        <option value = "MCA">MCA</option>
+                        <option value = "MTech">M Tech</option>
+                        <option value = "BTech">B Tech</option>
+                    </select>
+                </label>
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label>Specify Institutions:</label>
+            </p>
+            <p>
+
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "school">SSLC:</label>
+            </p>
+            <p>
+                <input type = "text" name = "school" id ="school" value = "" >
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for="hscschool">HSC:</label>
+            </p>
+            <p>
+                <input type = "text" name = "hscschool" id = "hscschool" value = "" >
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "ug">UG:</label>
+            </p>
+            <p>
+                <input type = "text" name = "ug" id = "ug" value = "" >
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                <label for = "pg">PG:</label>
+            </p>
+            <p>
+                <input type = "text" name = "pg" id = "pg" value = "" >
+            </p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend><b><i>Prevoius Proffesional Details</i></b></legend>
+        <div class = "tableRow">
+            <p>
+                <label for = "exp">Experience:</label>
+            </p>
+            <p>
+                <input type = "number" name = "exp" id = "exp" placeholder = "years" value = "" >
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+                Prevoius Workspaces
+            </p>
+            <p>
+                <input type = "text" name = "exp11" placeholder = "year-year">
+            </p>
+            <p>
+                <input type = "text" name = "exp12" placeholder = "company">
+            </p>
+            <p>
+                <input type = "text" name = "exp13" placeholder = "position">
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+
+            </p>
+            <p>
+                <input type = "text" name = "exp21" placeholder = "year-year">
+            </p>
+            <p>
+                <input type = "text" name = "exp22" placeholder = "company">
+            </p>
+            <p>
+                <input type = "text" name = "exp23" placeholder = "position">
+            </p>
+        </div>
+        <div class = "tableRow">
+            <p>
+
+            </p>
+            <p>
+                <input type = "text" name = "exp31" placeholder = "year-year">
+            </p>
+            <p>
+                <input type = "text" name = "exp32" placeholder = "company">
+            </p>
+            <p>
+                <input type = "text" name = "exp33" placeholder = "position">
+            </p>
+        </div>
+    </fieldset>
+    <div class>
+        <p>
+
+        </p>
+        <p>
+            <label><input type = "submit" name = "SUBMIT" value = "Generate"></label>
+        </p>
+    </div>
+</form>
+</body>
+</html>
